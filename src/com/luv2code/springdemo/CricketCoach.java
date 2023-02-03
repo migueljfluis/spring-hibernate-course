@@ -4,6 +4,7 @@ public class CricketCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
+	// fields
 	private String emailAddress;
 	private String team;
 	
@@ -17,12 +18,22 @@ public class CricketCoach implements Coach {
 		this.fortuneService = fortuneService;
 	}
 	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
 	public void setEmailAddress(String emailAddress) {
+		System.out.println("CricketCoach: inside setter method - setEmailAddress");
 		this.emailAddress = emailAddress;
+	}
+	
+	public String getTeam() {
+		return team;
 	}
 
 	public void setTeam(String team) {
-		this.team = team;
+		System.out.println("CricketCoach: inside setter method - setTeam");
+		this.team = team; 
 	}
 
 	@Override
